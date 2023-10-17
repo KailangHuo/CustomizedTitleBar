@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Gsilxe6dDFpn5LKjB8QC/ezHtfNmRQ6uUYTGChuE/hPls1q3L3o7odaeXB+zmObgmUIRYRENe0I3L/vNO8MO5w==",
+  "dgSpecHash": "VOK2OxFKRDV1sYplx3ZPHi5TmPoUaFOSfsAGjnHgp8CpOfMxMokXoQTf3D5DxOMxsW5kLwvM3oUE92HT9cCI7A==",
   "success": true,
-  "projectFilePath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+  "projectFilePath": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
   "expectedPackageFiles": [
-    "E:\\NUGET\\packages\\eventdrivenelements\\1.0.0\\eventdrivenelements.1.0.0.nupkg.sha512"
+    "C:\\Users\\huoka\\.nuget\\packages\\eventdrivenelements\\1.0.0\\eventdrivenelements.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

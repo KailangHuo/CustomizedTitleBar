@@ -34,32 +34,25 @@
     ]
   },
   "packageFolders": {
-    "E:\\NUGET\\packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\huoka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+      "projectUniqueName": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
       "projectName": "CustomizedTitleBar",
-      "projectPath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
-      "packagesPath": "E:\\NUGET\\packages",
-      "outputPath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\obj\\",
+      "projectPath": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+      "packagesPath": "C:\\Users\\huoka\\.nuget\\packages\\",
+      "outputPath": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\kailang.huo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\huoka\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.uihcloud.cn/repository/nuget-hswgroup-dev/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {

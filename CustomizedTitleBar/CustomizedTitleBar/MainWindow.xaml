@@ -9,13 +9,7 @@
         Title="MainWindow" Height="350" Width="450"
         
         >
-    <WindowChrome.WindowChrome>
-        <WindowChrome
-            CornerRadius="0"
-            GlassFrameThickness="-1"
-            ResizeBorderThickness="5"
-            UseAeroCaptionButtons="False" />
-    </WindowChrome.WindowChrome>
+    
     <Grid >
         <local:CustomizedTitileBar_UserControl VerticalAlignment="Top"
             HostWindow="{Binding ElementName=ThisWindow}"
