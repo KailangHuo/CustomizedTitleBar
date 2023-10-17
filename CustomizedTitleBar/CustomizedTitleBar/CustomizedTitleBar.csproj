@@ -5,6 +5,13 @@
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>CustomizedTitleBar</Title>
+        <Description>Getting tired of finding a solution to customize your title bar?
+No idea about how to set he background color of the titlebar?
+well you gotta try this UserControl!
+Access more in my github page</Description>
+        <Copyright>personal copyright</Copyright>
     </PropertyGroup>
 
     <ItemGroup>

@@ -12,6 +12,10 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomizedTitleBar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("personal copyright")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Getting tired of finding a solution to customize your title bar?\r\nNo idea about h" +
+    "ow to set he background color of the titlebar?\r\nwell you gotta try this UserCont" +
+    "rol!\r\nAccess more in my github page")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomizedTitleBar")]
