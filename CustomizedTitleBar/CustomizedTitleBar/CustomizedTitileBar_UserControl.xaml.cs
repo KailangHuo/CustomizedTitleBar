@@ -19,7 +19,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         InitializeComponent();
         this.DataContext = this;
         this.BorderThickness = new Thickness(1);
-        this.DrawingColor = (Brush)new BrushConverter().ConvertFromString("Black");
+        this.Foreground = (Brush)new BrushConverter().ConvertFromString("Black");
         this.Background = (Brush)new BrushConverter().ConvertFromString("White");
         this.HasTitle = true;
         this.Height = 29.00;
@@ -76,7 +76,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
     
     public ImageSource IconSource { get; set; }
     
-    public Brush DrawingColor { get; set; }
+    public Brush Foreground { get; set; }
 
     private bool _isNormalWindowState;
 
