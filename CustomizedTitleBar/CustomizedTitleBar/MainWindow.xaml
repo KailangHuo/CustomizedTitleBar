@@ -17,7 +17,7 @@
             BorderThickness="1"
             BorderBrush="Black"
             Background="#FF24292E"
-            DrawingColor="White"
+            Foreground="White"
             IconSource="D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\Resource/notebookmacbookcomputer-116037_116000.ico">
         </local:CustomizedTitileBar_UserControl>
     </Grid>
