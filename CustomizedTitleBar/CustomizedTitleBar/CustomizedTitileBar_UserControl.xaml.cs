@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Ribbon;
 using System.Windows.Media;
+using System.Windows.Shell;
 
 
 namespace CustomizedTitleBar; 
@@ -31,6 +32,17 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.HostWindow.StateChanged += HostWindow_StateChanged;
         IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
         TitleStr = this.HostWindow.Title;
+        
+        // 创建一个WindowChrome对象
+        WindowChrome windowChrome = new WindowChrome();
+        // 设置WindowChrome的属性
+        windowChrome.CornerRadius = new CornerRadius(0);
+        windowChrome.GlassFrameThickness = new Thickness(-1);
+        windowChrome.ResizeBorderThickness = new Thickness(5);
+        windowChrome.UseAeroCaptionButtons = false;
+        // 将WindowChrome对象赋值给当前窗口
+        WindowChrome.SetWindowChrome(this.HostWindow, windowChrome);
+        
     }
     
     private void HostWindow_StateChanged(object sender, EventArgs e)
