@@ -28,7 +28,6 @@
                 </Grid.ColumnDefinitions>
                 
                 <Image Grid.Column="0" Name="Icon"
-                       Source="{Binding IconSource}"
                        HorizontalAlignment="Left"
                        Margin="3,0,0,0"
                        Width="25" Height="29"/>

@@ -32,6 +32,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.HostWindow.StateChanged += HostWindow_StateChanged;
         IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
         TitleStr = this.HostWindow.Title;
+        this.Icon.Source = this.HostWindow.Icon;
         
         // 创建一个WindowChrome对象
         WindowChrome windowChrome = new WindowChrome();
@@ -73,8 +74,6 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         get { return (Window)GetValue(HostWindowProperty); }
         set { SetValue(HostWindowProperty,value); }
     }
-    
-    public ImageSource IconSource { get; set; }
     
     public Brush Foreground { get; set; }
 
