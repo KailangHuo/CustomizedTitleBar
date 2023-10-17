@@ -12,31 +12,6 @@ you gotta give your window a name, which will be used in later process
         >
 ```
 
-
-Simply copy-paste the following code right after your window declaration
-(not in your Main Grid field)
-```
-<Window x:Class="MainWindow"
-        x:Name="ThisWindow"
-        ...
-        >
-        
-     <WindowChrome.WindowChrome>
-            <WindowChrome
-                CornerRadius="0"
-                GlassFrameThickness="-1"
-                ResizeBorderThickness="0"
-                UseAeroCaptionButtons="False" />
-     </WindowChrome.WindowChrome>
-     
-     <Grid>
-        ...
-     </Grid>
- 
- </Window>
- 
-```
-
 and then set this UserControl at the top of your Main Grid, you can 
 also edit its several features by setting just like this:
 ```
@@ -52,8 +27,6 @@ also edit its several features by setting just like this:
 ```
 
 DO remember using "Binding" to bind the name of your window, "ThisWindow" in
-this case, to the "HostWindow" property.
+this case, to the "HostWindow" property by useing the "ElementName" feature.
 
 You are good to go!
-
-The "DrawingColor" property indicates the button's color.
