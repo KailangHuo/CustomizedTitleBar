@@ -10,12 +10,21 @@
         <Description>Getting tired of finding a solution to customize your title bar?
 No idea about how to set he background color of the titlebar?
 well you gotta try this UserControl!
-Access more in my github page</Description>
+Access more in my github page:
+https://github.com/KailangHuo/CustomizedTitleBar</Description>
         <Copyright>personal copyright</Copyright>
+        <Authors>KyanHuo</Authors>
+        <PackageProjectUrl>https://github.com/KailangHuo/CustomizedTitleBar</PackageProjectUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/KailangHuo/CustomizedTitleBar</RepositoryUrl>
+        <RepositoryType>public</RepositoryType>
+        <PackageTags>CustomizedTitleBar, WPF, </PackageTags>
+        <PackageReadMeFile>README.md</PackageReadMeFile>
     </PropertyGroup>
-
+    
     <ItemGroup>
-      <PackageReference Include="EventDrivenElements" Version="1.0.0" />
+        <None Include="docs/README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>

@@ -1,37 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "EventDrivenElements/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/EventDrivenElements.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/EventDrivenElements.dll": {}
-        }
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "EventDrivenElements/1.0.0": {
-      "sha512": "WghfVyjxp1DNXAQg9tW+BdXcxN+MI3K11Aoe/Uz3edNgPjzUisD1nNC7scMj6UQToTdcE+UpGeAoYVnrw5jSlw==",
-      "type": "package",
-      "path": "eventdrivenelements/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "eventdrivenelements.1.0.0.nupkg.sha512",
-        "eventdrivenelements.nuspec",
-        "lib/net6.0/EventDrivenElements.dll"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "EventDrivenElements >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\huoka\\.nuget\\packages\\": {}
@@ -69,12 +43,6 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
-        "dependencies": {
-          "EventDrivenElements": {
-            "target": "Package",
-            "version": "[1.0.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
