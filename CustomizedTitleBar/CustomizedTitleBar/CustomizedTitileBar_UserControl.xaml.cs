@@ -24,7 +24,6 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.BorderThickness = new Thickness(1);
         this.Foreground = (Brush)new BrushConverter().ConvertFromString("Black");
         this.Background = (Brush)new BrushConverter().ConvertFromString("White");
-        this.HasTitle = true;
         this.IsNormalWindowState = true;
         this.IsResizable = true;
         this.Height = 30.00;
@@ -85,9 +84,6 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         set { SetValue(HostWindowProperty,value); }
     }
     
-
-    public Brush Foreground { get; set; }
-
     private bool _isNormalWindowState;
 
     public bool IsNormalWindowState {
@@ -121,19 +117,6 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
                 this.MaximizeButton.Content = null;
             }
             RisePropertyChanged(nameof(IsResizable));
-        }
-    }
-    
-    private bool _hasTitle;
-
-    public bool HasTitle {
-        get {
-            return _hasTitle;
-        }
-        private set {
-            if(_hasTitle == value)return;
-            _hasTitle = value;
-            RisePropertyChanged(nameof(HasTitle));
         }
     }
 
