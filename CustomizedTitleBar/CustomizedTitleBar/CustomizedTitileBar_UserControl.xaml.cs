@@ -1,12 +1,15 @@
-
-
 using System;
 using System.ComponentModel;
+using System.Drawing;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Ribbon;
+using System.Windows.Interop;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using System.Windows.Shell;
+using Brush = System.Windows.Media.Brush;
 
 
 namespace CustomizedTitleBar; 
@@ -32,7 +35,9 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.HostWindow.StateChanged += HostWindow_StateChanged;
         this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
         this.Title = this.HostWindow.Title;
-        this.Icon.Source = this.HostWindow.Icon;
+        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
+        this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+            
         
         // 创建一个WindowChrome对象
         WindowChrome windowChrome = new WindowChrome();

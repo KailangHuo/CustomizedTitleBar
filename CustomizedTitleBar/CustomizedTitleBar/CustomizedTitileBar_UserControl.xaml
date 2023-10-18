@@ -31,9 +31,9 @@
                 
                 <Image Grid.Column="0" Name="Icon"
                        HorizontalAlignment="Left"
-                       VerticalAlignment="Stretch"
+                       VerticalAlignment="Center"
                        Margin="3,0,0,0"
-                       Width="25" />
+                       Width="25" Height="25"/>
                 
                 <TextBlock Grid.Column="1" Margin="10,0,0,0"
                            Text="{Binding TitleStr}" Foreground="{Binding Foreground}" 

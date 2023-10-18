@@ -14,6 +14,5 @@
             VerticalAlignment="Top"
             />
         
-        <Button VerticalAlignment="Bottom" Height="100"></Button>
     </Grid>
 </Window>

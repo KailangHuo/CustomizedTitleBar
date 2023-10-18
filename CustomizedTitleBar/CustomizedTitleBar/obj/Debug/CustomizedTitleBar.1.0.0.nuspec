@@ -18,7 +18,9 @@ https://github.com/KailangHuo/CustomizedTitleBar</description>
     <tags>CustomizedTitleBar, WPF,</tags>
     <repository type="public" url="https://github.com/KailangHuo/CustomizedTitleBar" />
     <dependencies>
-      <group targetFramework="net6.0-windows7.0" />
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="System.Drawing.Common" version="8.0.0-rc.2.23479.14" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
     <frameworkReferences>
       <group targetFramework="net6.0-windows7.0">
