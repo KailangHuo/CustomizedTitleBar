@@ -8,8 +8,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <local:CustomizedTitileBar_UserControl VerticalAlignment="Top"
-            
+        <local:CustomizedTitileBar_UserControl  
+            HostWindow="{Binding ElementName=ThisWindow}"
+            Height="40"
+            VerticalAlignment="Top"
             />
+        
+        <Button VerticalAlignment="Bottom" Height="100"></Button>
     </Grid>
 </Window>

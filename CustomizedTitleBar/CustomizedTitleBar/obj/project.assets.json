@@ -8,25 +8,32 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\huoka\\.nuget\\packages\\": {}
+    "E:\\NUGET\\packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+      "projectUniqueName": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
       "projectName": "CustomizedTitleBar",
-      "projectPath": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
-      "packagesPath": "C:\\Users\\huoka\\.nuget\\packages\\",
-      "outputPath": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\obj\\",
+      "projectPath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+      "packagesPath": "E:\\NUGET\\packages",
+      "outputPath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\huoka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\kailang.huo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nexus.uihcloud.cn/repository/nuget-hswgroup-dev/": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {

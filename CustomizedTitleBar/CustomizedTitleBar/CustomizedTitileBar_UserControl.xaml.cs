@@ -22,25 +22,26 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.Foreground = (Brush)new BrushConverter().ConvertFromString("Black");
         this.Background = (Brush)new BrushConverter().ConvertFromString("White");
         this.HasTitle = true;
-        this.Height = 29.00;
         this.IsNormalWindowState = true;
         this.IsResizable = true;
+        this.Height = 30.00;
         this.Loaded += OnLoaded;
     }
 
     private void OnLoaded(object o, RoutedEventArgs e) {
         this.HostWindow.StateChanged += HostWindow_StateChanged;
-        IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
-        TitleStr = this.HostWindow.Title;
+        this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
+        this.Title = this.HostWindow.Title;
         this.Icon.Source = this.HostWindow.Icon;
         
         // 创建一个WindowChrome对象
         WindowChrome windowChrome = new WindowChrome();
         // 设置WindowChrome的属性
         windowChrome.CornerRadius = new CornerRadius(0);
-        windowChrome.GlassFrameThickness = new Thickness(-1);
+        windowChrome.GlassFrameThickness = new Thickness(0);
         windowChrome.ResizeBorderThickness = new Thickness(5);
         windowChrome.UseAeroCaptionButtons = false;
+        
         // 将WindowChrome对象赋值给当前窗口
         WindowChrome.SetWindowChrome(this.HostWindow, windowChrome);
         
@@ -51,10 +52,14 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         if (this.HostWindow.WindowState == WindowState.Maximized)
         {
             IsNormalWindowState = false;
+            this.MainGrid.Margin = new Thickness(8, 8, 8, 0);
+
         }
         else if (this.HostWindow.WindowState == WindowState.Normal)
         {
             IsNormalWindowState = true;
+            this.MainGrid.Margin = new Thickness(0, 0, 0, 0);
+            
         }
     }
 
@@ -75,6 +80,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         set { SetValue(HostWindowProperty,value); }
     }
     
+
     public Brush Foreground { get; set; }
 
     private bool _isNormalWindowState;
@@ -83,7 +89,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         get {
             return _isNormalWindowState;
         }
-        set {
+        private set {
             if(_isNormalWindowState == value)return;
             _isNormalWindowState = value;
             RisePropertyChanged(nameof(IsNormalWindowState));
@@ -96,7 +102,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         get {
             return _isResizable;
         }
-        set {
+        private set {
             if(_isResizable == value)return;
             _isResizable = value;
             if (_isResizable) {
@@ -119,25 +125,26 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         get {
             return _hasTitle;
         }
-        set {
+        private set {
             if(_hasTitle == value)return;
             _hasTitle = value;
             RisePropertyChanged(nameof(HasTitle));
         }
     }
 
-    private string _titleStr;
+    private string _title;
 
-    public string TitleStr {
+    public string Title {
         get {
-            return _titleStr;
+            return _title;
         }
         set {
-            if (_titleStr == value) return;
-            _titleStr = value;
-            RisePropertyChanged(nameof(TitleStr));
+            if (_title == value) return;
+            _title = value;
+            RisePropertyChanged(nameof(Title));
         }
     }
+
 
     #endregion
 
@@ -163,10 +170,15 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
 
     #endregion
     
-    
+    #region INotifyPropertyChanged
+
     public event PropertyChangedEventHandler? PropertyChanged;
 
     public void RisePropertyChanged(string propertyName) {
         if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
     }
+
+    #endregion
+    
+    
 }

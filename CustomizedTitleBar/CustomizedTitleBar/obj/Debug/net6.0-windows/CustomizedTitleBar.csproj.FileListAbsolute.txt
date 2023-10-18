@@ -20,3 +20,5 @@ D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\De
 D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitileBar_UserControl.g.cs
 D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitileBar_UserControl.baml
+D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.baml
