@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zhGFUYinwphTnGP4PAMiFn4QkeV9+wTcSb/rkFa58N2DkY9ZomJQGteNI8bJuZBQbcZaQ9ogA/jQrKKcPAnIIA==",
+  "dgSpecHash": "Esql3ex7sdEHev85MNzFlR/YO3sH8ea5pV1HHKKwWU0hqEQs4lIVolismfUuxzblwYaqrIZVLXp9vGBrTSgTqQ==",
   "success": true,
-  "projectFilePath": "D:\\Git-Repo-Main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+  "expectedPackageFiles": [
+    "E:\\NUGET\\packages\\microsoft.win32.systemevents\\8.0.0-rc.2.23479.6\\microsoft.win32.systemevents.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "E:\\NUGET\\packages\\system.drawing.common\\8.0.0-rc.2.23479.14\\system.drawing.common.8.0.0-rc.2.23479.14.nupkg.sha512"
+  ],
   "logs": []
 }

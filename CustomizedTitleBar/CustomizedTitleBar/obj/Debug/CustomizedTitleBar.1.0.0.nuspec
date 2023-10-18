@@ -18,7 +18,9 @@ https://github.com/KailangHuo/CustomizedTitleBar</description>
     <tags>CustomizedTitleBar, WPF,</tags>
     <repository type="public" url="https://github.com/KailangHuo/CustomizedTitleBar" />
     <dependencies>
-      <group targetFramework="net6.0-windows7.0" />
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="System.Drawing.Common" version="8.0.0-rc.2.23479.14" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
     <frameworkReferences>
       <group targetFramework="net6.0-windows7.0">
@@ -27,8 +29,8 @@ https://github.com/KailangHuo/CustomizedTitleBar</description>
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="D:\Git-Repo-Main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\CustomizedTitleBar.runtimeconfig.json" target="lib\net6.0-windows7.0\CustomizedTitleBar.runtimeconfig.json" />
-    <file src="D:\Git-Repo-Main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\CustomizedTitleBar.dll" target="lib\net6.0-windows7.0\CustomizedTitleBar.dll" />
-    <file src="D:\Git-Repo-Main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\docs\README.md" target="\README.md" />
+    <file src="D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\CustomizedTitleBar.runtimeconfig.json" target="lib\net6.0-windows7.0\CustomizedTitleBar.runtimeconfig.json" />
+    <file src="D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\CustomizedTitleBar.dll" target="lib\net6.0-windows7.0\CustomizedTitleBar.dll" />
+    <file src="D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\docs\README.md" target="\README.md" />
   </files>
 </package>

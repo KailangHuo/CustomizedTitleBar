@@ -18,10 +18,9 @@ also edit its several features by setting just like this:
 <customizedTitleBar:CustomizedTitileBar_UserControl Margin="0,0,0,-1"
                 HostWindow="{Binding ElementName = ThisWindow}"
                 Background="#FF24292E"
+                Foreground="White"
                 BorderThickness="1"
-                BorderBrush="Black"
-                DrawingColor="WhiteSmoke"
-                IconSource="<your_Icon_Path>"
+                BorderBrush="Black"               
             />
 
 ```
