@@ -21,7 +21,7 @@ https://github.com/KailangHuo/CustomizedTitleBar</Description>
         <RepositoryType>public</RepositoryType>
         <PackageTags>CustomizedTitleBar, WPF, </PackageTags>
         <PackageReadMeFile>README.md</PackageReadMeFile>
-        <ApplicationIcon>notebookmacbookcomputer-116037_116000.ico</ApplicationIcon>
+        <Version>1.0.2</Version>
     </PropertyGroup>
     
     <ItemGroup>
