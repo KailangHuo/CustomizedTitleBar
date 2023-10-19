@@ -13,7 +13,7 @@
         <local:ReverseBoolToVisiConverter x:Key="ReverseBoolToVisiConverter"/>
     </UserControl.Resources>
     
-    <Grid>
+    <Grid Name="ContentGrid">
         <!-- Title Bar -->
         <Grid >
             <Grid.ColumnDefinitions>

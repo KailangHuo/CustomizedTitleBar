@@ -16,6 +16,8 @@ namespace CustomizedTitleBar;
 
 public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPropertyChanged {
 
+    private const double WINDOW_MAXIMIZE_OVEREDGE_DIGITS = 7.00;
+
     #region CONSTRUCTION
 
     public CustomizedTitileBar_UserControl() {
@@ -33,6 +35,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
     private void OnLoaded(object o, RoutedEventArgs e) {
         this.HostWindow.StateChanged += HostWindow_StateChanged;
         this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
+        Brush brush = this.MainGrid.Background;
         this.Title = this.HostWindow.Title;
         Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
         this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
@@ -56,13 +59,17 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         if (this.HostWindow.WindowState == WindowState.Maximized)
         {
             IsNormalWindowState = false;
-            this.MainGrid.Margin = new Thickness(8, 8, 8, 0);
+            ReCalibrateContentGrid(WindowState.Maximized);
+            this.MainGrid.Width = this.MainGrid.Width + (WINDOW_MAXIMIZE_OVEREDGE_DIGITS * 2);
+            this.MainGrid.Height = this.Height + WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
 
         }
         else if (this.HostWindow.WindowState == WindowState.Normal)
         {
             IsNormalWindowState = true;
-            this.MainGrid.Margin = new Thickness(0, 0, 0, 0);
+            ReCalibrateContentGrid(WindowState.Normal);
+            this.MainGrid.Width = this.MainGrid.Width - (WINDOW_MAXIMIZE_OVEREDGE_DIGITS * 2);
+            this.MainGrid.Height = this.Height - WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
             
         }
     }
@@ -154,6 +161,17 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
     private void NormalizeButton_OnClick(object sender, RoutedEventArgs e) {
         this.HostWindow.WindowState = WindowState.Normal;
         
+    }
+
+    #endregion
+
+    #region PRIVATE_METHODS
+
+    private void ReCalibrateContentGrid(WindowState windowState) {
+        double marginDigits = windowState == WindowState.Maximized
+            ? WINDOW_MAXIMIZE_OVEREDGE_DIGITS
+            : 0.00;
+        this.ContentGrid.Margin = new Thickness(marginDigits, marginDigits, marginDigits, 0);
     }
 
     #endregion
