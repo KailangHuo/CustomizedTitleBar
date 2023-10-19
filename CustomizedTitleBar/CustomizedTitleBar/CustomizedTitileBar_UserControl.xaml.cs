@@ -34,24 +34,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
 
     private void OnLoaded(object o, RoutedEventArgs e) {
         this.HostWindow.StateChanged += HostWindow_StateChanged;
-        this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
-        Brush brush = this.MainGrid.Background;
-        this.Title = this.HostWindow.Title;
-        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
-        this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-            
-        
-        // 创建一个WindowChrome对象
-        WindowChrome windowChrome = new WindowChrome();
-        // 设置WindowChrome的属性
-        windowChrome.CornerRadius = new CornerRadius(0);
-        windowChrome.GlassFrameThickness = new Thickness(0);
-        windowChrome.ResizeBorderThickness = new Thickness(5);
-        windowChrome.UseAeroCaptionButtons = false;
-        
-        // 将WindowChrome对象赋值给当前窗口
-        WindowChrome.SetWindowChrome(this.HostWindow, windowChrome);
-        
+        this.HostWindow.ContentRendered += HostWindow_ContentRendered;
     }
     
     private void HostWindow_StateChanged(object sender, EventArgs e)
@@ -72,6 +55,26 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
             this.MainGrid.Height = this.Height - WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
             
         }
+    }
+
+    private void HostWindow_ContentRendered(object sender, EventArgs e) {
+        this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
+        this.Title = this.HostWindow.Title;
+        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
+        this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+        
+        // 创建一个WindowChrome对象
+        WindowChrome windowChrome = new WindowChrome();
+        // 设置WindowChrome的属性
+        windowChrome.CornerRadius = new CornerRadius(0);
+        windowChrome.CaptionHeight = this.MainGrid.Height;
+        windowChrome.GlassFrameThickness = new Thickness(0);
+        windowChrome.ResizeBorderThickness = new Thickness(5);
+        windowChrome.UseAeroCaptionButtons = false;
+        
+        // 将WindowChrome对象赋值给当前窗口
+        WindowChrome.SetWindowChrome(this.HostWindow, windowChrome);
+        
     }
 
     #endregion
