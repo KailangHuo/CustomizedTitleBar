@@ -24,3 +24,5 @@ D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\De
 D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\System.Drawing.Common.dll
 D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.csproj.CopyComplete
+D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\git-repo-main\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.baml
