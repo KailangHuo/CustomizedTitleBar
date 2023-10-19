@@ -35,7 +35,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.HostWindow.StateChanged += HostWindow_StateChanged;
         this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
         this.Title = this.HostWindow.Title;
-        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
+        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
         this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
             
         
