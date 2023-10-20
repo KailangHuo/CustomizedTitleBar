@@ -33,25 +33,20 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
     }
 
     private void OnLoaded(object o, RoutedEventArgs e) {
-        this.HostWindow.StateChanged += HostWindow_StateChanged;
-        this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
-        Brush brush = this.MainGrid.Background;
-        this.Title = this.HostWindow.Title;
-        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
-        this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-            
-        
         // 创建一个WindowChrome对象
         WindowChrome windowChrome = new WindowChrome();
         // 设置WindowChrome的属性
         windowChrome.CornerRadius = new CornerRadius(0);
+        windowChrome.CaptionHeight = this.MainGrid.Height + WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
         windowChrome.GlassFrameThickness = new Thickness(0);
         windowChrome.ResizeBorderThickness = new Thickness(5);
         windowChrome.UseAeroCaptionButtons = false;
-        
+
         // 将WindowChrome对象赋值给当前窗口
         WindowChrome.SetWindowChrome(this.HostWindow, windowChrome);
         
+        this.HostWindow.StateChanged += HostWindow_StateChanged;
+        this.HostWindow.ContentRendered += HostWindow_ContentRendered;
     }
     
     private void HostWindow_StateChanged(object sender, EventArgs e)
@@ -60,18 +55,19 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         {
             IsNormalWindowState = false;
             ReCalibrateContentGrid(WindowState.Maximized);
-            this.MainGrid.Width = this.MainGrid.Width + (WINDOW_MAXIMIZE_OVEREDGE_DIGITS * 2);
-            this.MainGrid.Height = this.Height + WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
-
         }
         else if (this.HostWindow.WindowState == WindowState.Normal)
         {
             IsNormalWindowState = true;
             ReCalibrateContentGrid(WindowState.Normal);
-            this.MainGrid.Width = this.MainGrid.Width - (WINDOW_MAXIMIZE_OVEREDGE_DIGITS * 2);
-            this.MainGrid.Height = this.Height - WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
-            
         }
+    }
+
+    private void HostWindow_ContentRendered(object sender, EventArgs e) {
+        this.IsResizable = this.HostWindow.ResizeMode == ResizeMode.CanResize;
+        this.Title = this.HostWindow.Title;
+        Icon icon = System.Drawing.Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
+        this.Icon.Source = Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
     }
 
     #endregion
@@ -171,7 +167,9 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         double marginDigits = windowState == WindowState.Maximized
             ? WINDOW_MAXIMIZE_OVEREDGE_DIGITS
             : 0.00;
-        this.ContentGrid.Margin = new Thickness(marginDigits, marginDigits, marginDigits, 0);
+        FrameworkElement frameworkElement = this.HostWindow.Content as FrameworkElement;
+        if(frameworkElement == null) return;
+        frameworkElement.Margin = new Thickness(marginDigits, marginDigits, marginDigits, 0);
     }
 
     #endregion
