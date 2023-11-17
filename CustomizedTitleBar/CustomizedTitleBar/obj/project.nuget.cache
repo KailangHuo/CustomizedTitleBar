@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Y9RmxJzuHfEv5UcES8tCHs/2nb/xDJ+Yfhcx+BtawNcE/kaj/JyH0CsXY2cf9+yia4rvngiag8HnaYnbR89JoQ==",
+  "dgSpecHash": "9/DSB2QA8kKxX8767dcXEJ9dS8G5Xe3xrOMBU7Vgk/RxOhZpntzYvhxTxUavV8NQ34YDPpJvDNxZgfUn8C84NQ==",
   "success": true,
-  "projectFilePath": "D:\\git-repo-main\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+  "projectFilePath": "D:\\System\\Documents\\GitHub\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
   "expectedPackageFiles": [
-    "E:\\NUGET\\packages\\microsoft.win32.systemevents\\8.0.0-rc.2.23479.6\\microsoft.win32.systemevents.8.0.0-rc.2.23479.6.nupkg.sha512",
-    "E:\\NUGET\\packages\\system.drawing.common\\8.0.0-rc.2.23479.14\\system.drawing.common.8.0.0-rc.2.23479.14.nupkg.sha512"
+    "C:\\Users\\kailang.huo\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0-rc.2.23479.6\\microsoft.win32.systemevents.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\kailang.huo\\.nuget\\packages\\system.drawing.common\\8.0.0-rc.2.23479.14\\system.drawing.common.8.0.0-rc.2.23479.14.nupkg.sha512"
   ],
   "logs": []
 }
