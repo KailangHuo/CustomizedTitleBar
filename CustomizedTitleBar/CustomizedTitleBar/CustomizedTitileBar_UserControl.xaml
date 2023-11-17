@@ -8,9 +8,15 @@
              d:DesignHeight="300" d:DesignWidth="300"
              Name="MainGrid"
              >
+    
     <UserControl.Resources>
-        <local:BoolToVisiConverter x:Key="BoolToVisiConverter"/>
-        <local:ReverseBoolToVisiConverter x:Key="ReverseBoolToVisiConverter"/>
+        <ResourceDictionary>
+            <local:BoolToVisiConverter x:Key="BoolToVisiConverter"/>
+            <local:ReverseBoolToVisiConverter x:Key="ReverseBoolToVisiConverter"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ButtonStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </UserControl.Resources>
     
     <Grid Name="ContentGrid">
@@ -58,9 +64,9 @@
                         
                         <!-- Minimize Button -->
                         <Button Name="MinimizeButton"
+                                Style="{DynamicResource GrayCaptionButtonStyleKey}"
                                 Width="40"
                                 VerticalAlignment="Stretch"
-                                Background="{Binding Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 BorderThickness="0"
                                 Click="MinimizeButton_OnClick"
                         >
@@ -76,9 +82,9 @@
                         
                         <!-- Maximize Button -->
                         <Button Width="40" Name="MaximizeButton"
+                                Style="{DynamicResource GrayCaptionButtonStyleKey}"
                                 VerticalAlignment="Stretch"
                                 Visibility="{Binding IsNormalWindowState, Converter={StaticResource BoolToVisiConverter}}"
-                                Background="{Binding Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 BorderThickness="0"
                                 Click="MaximizeButton_OnClick"
                         >
@@ -94,9 +100,9 @@
                         
                         <!-- Normalize Button -->
                         <Button Width="40" Name="NormalizeButton"
+                                Style="{DynamicResource GrayCaptionButtonStyleKey}"
                                 VerticalAlignment="Stretch"
                                 Visibility="{Binding IsNormalWindowState, Converter={StaticResource ReverseBoolToVisiConverter}}"
-                                Background="{Binding Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 BorderThickness="0"
                                 Click="NormalizeButton_OnClick"
                         >
@@ -112,8 +118,8 @@
                         
                         <!-- Close Button -->
                         <Button Width="40" Name="CloseButton"
+                                Style="{DynamicResource RedCaptionButtonStyleKey}"
                                 VerticalAlignment="Stretch"
-                                Background="{Binding Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 BorderThickness="0"
                                 Click="CloseButton_OnClick"
                         >
