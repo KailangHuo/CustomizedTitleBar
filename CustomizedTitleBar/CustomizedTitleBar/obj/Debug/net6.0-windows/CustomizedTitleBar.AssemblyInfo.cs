@@ -17,11 +17,11 @@ using System.Reflection;
     "ow to set he background color of the titlebar?\r\nwell you gotta try this UserCont" +
     "rol!\r\nAccess more in my github page:\r\nhttps://github.com/KailangHuo/CustomizedTi" +
     "tleBar")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.5")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.8.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomizedTitleBar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomizedTitleBar")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.5.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.8.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/KailangHuo/CustomizedTitleBar")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
