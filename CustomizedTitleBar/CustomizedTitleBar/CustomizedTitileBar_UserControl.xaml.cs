@@ -37,7 +37,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         WindowChrome windowChrome = new WindowChrome();
         // 设置WindowChrome的属性
         windowChrome.CornerRadius = new CornerRadius(0);
-        windowChrome.CaptionHeight = this.MainGrid.Height + WINDOW_MAXIMIZE_OVEREDGE_DIGITS;
+        windowChrome.CaptionHeight = this.MainGrid.Height;
         windowChrome.GlassFrameThickness = new Thickness(0);
         windowChrome.ResizeBorderThickness = new Thickness(5);
         windowChrome.UseAeroCaptionButtons = false;
