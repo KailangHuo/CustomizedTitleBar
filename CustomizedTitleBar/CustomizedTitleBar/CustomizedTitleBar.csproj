@@ -21,7 +21,7 @@ https://github.com/KailangHuo/CustomizedTitleBar</Description>
         <RepositoryType>public</RepositoryType>
         <PackageTags>CustomizedTitleBar, WPF, </PackageTags>
         <PackageReadMeFile>README.md</PackageReadMeFile>
-        <Version>1.0.2</Version>
+        <Version>1.0.5</Version>
     </PropertyGroup>
     
     <ItemGroup>

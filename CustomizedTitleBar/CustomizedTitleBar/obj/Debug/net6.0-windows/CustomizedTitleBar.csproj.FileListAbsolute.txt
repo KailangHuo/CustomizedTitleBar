@@ -37,13 +37,11 @@ D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitle
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.csproj.AssemblyReference.cache
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\ButtonStyles.baml
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitileBar_UserControl.g.cs
-D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\App.g.cs
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar_MarkupCompile.cache
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar_MarkupCompile.lref
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitileBar_UserControl.baml
-D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.baml
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.g.resources
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.GeneratedMSBuildEditorConfig.editorconfig
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.AssemblyInfoInputs.cache
@@ -55,3 +53,5 @@ D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitle
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.pdb
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\CustomizedTitleBar.genruntimeconfig.cache
 D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\ref\CustomizedTitleBar.dll
+D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\obj\Debug\net6.0-windows\MainWindow.baml
