@@ -169,7 +169,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
             : 0.00;
         FrameworkElement frameworkElement = this.HostWindow.Content as FrameworkElement;
         if(frameworkElement == null) return;
-        frameworkElement.Margin = new Thickness(marginDigits, marginDigits, marginDigits, 0);
+        frameworkElement.Margin = new Thickness(marginDigits);
     }
 
     #endregion
