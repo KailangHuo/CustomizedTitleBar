@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\System\\Documents\\GitHub\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj": {}
+  },
+  "projects": {
+    "D:\\System\\Documents\\GitHub\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj": {
+      "version": "1.0.5",
+      "restore": {
+        "projectUniqueName": "D:\\System\\Documents\\GitHub\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+        "projectName": "CustomizedTitleBar",
+        "projectPath": "D:\\System\\Documents\\GitHub\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar.csproj",
+        "packagesPath": "C:\\Users\\kailang.huo\\.nuget\\packages\\",
+        "outputPath": "D:\\System\\Documents\\GitHub\\CustomizedTitleBar\\CustomizedTitleBar\\CustomizedTitleBar\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kailang.huo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.uihcloud.cn/repository/nuget-hswgroup-dev": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23479.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
