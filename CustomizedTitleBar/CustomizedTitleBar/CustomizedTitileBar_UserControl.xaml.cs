@@ -18,6 +18,8 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
 
     private const double WINDOW_MAXIMIZE_OVEREDGE_DIGITS = 7.00;
 
+    private const double WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS = 3.00;
+
     #region CONSTRUCTION
 
     public CustomizedTitileBar_UserControl() {
@@ -37,7 +39,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         WindowChrome windowChrome = new WindowChrome();
         // 设置WindowChrome的属性
         windowChrome.CornerRadius = new CornerRadius(0);
-        windowChrome.CaptionHeight = this.MainGrid.Height;
+        windowChrome.CaptionHeight = this.MainGrid.Height - WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS;
         windowChrome.GlassFrameThickness = new Thickness(0);
         windowChrome.ResizeBorderThickness = new Thickness(5);
         windowChrome.UseAeroCaptionButtons = false;
@@ -167,9 +169,15 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         double marginDigits = windowState == WindowState.Maximized
             ? WINDOW_MAXIMIZE_OVEREDGE_DIGITS
             : 0.00;
+        double captionHeightDigits = windowState == WindowState.Maximized
+            ? -1 * WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS - 1
+            : WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS;
         FrameworkElement frameworkElement = this.HostWindow.Content as FrameworkElement;
         if(frameworkElement == null) return;
         frameworkElement.Margin = new Thickness(marginDigits);
+
+        WindowChrome windowChrome = WindowChrome.GetWindowChrome(this.HostWindow);
+        windowChrome.CaptionHeight = this.MainGrid.Height - captionHeightDigits;
     }
 
     #endregion
