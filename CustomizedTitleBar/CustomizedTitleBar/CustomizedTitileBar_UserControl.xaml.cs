@@ -18,7 +18,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
 
     private const double WINDOW_MAXIMIZE_OVEREDGE_DIGITS = 7.00;
 
-    private const double WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS = 3.00;
+    private const double WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS = 4.00;
 
     #region CONSTRUCTION
 
@@ -31,6 +31,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         this.IsNormalWindowState = true;
         this.IsResizable = true;
         this.Height = 30.00;
+        this.ButtonWidth = 45.00;
         this.Loaded += OnLoaded;
     }
 
@@ -138,6 +139,19 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
         }
     }
 
+    private double _buttonWidth;
+
+    public double ButtonWidth {
+        get {
+            return _buttonWidth;
+        }
+        set {
+            if(_buttonWidth == value)return;
+            _buttonWidth = value;
+            RisePropertyChanged(nameof(ButtonWidth));
+        }
+    }
+
 
     #endregion
 
@@ -170,7 +184,7 @@ public partial class CustomizedTitileBar_UserControl : UserControl, INotifyPrope
             ? WINDOW_MAXIMIZE_OVEREDGE_DIGITS
             : 0.00;
         double captionHeightDigits = windowState == WindowState.Maximized
-            ? -1 * WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS - 1
+            ? -1 * WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS + 2
             : WINDOW_NORMALIZE_OVEREDGE_CAPTION_DIGITS;
         FrameworkElement frameworkElement = this.HostWindow.Content as FrameworkElement;
         if(frameworkElement == null) return;

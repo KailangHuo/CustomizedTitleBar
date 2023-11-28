@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CustomizedTitleBar</id>
+    <version>1.0.8</version>
+    <title>CustomizedTitleBar</title>
+    <authors>KyanHuo</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/KailangHuo/CustomizedTitleBar</projectUrl>
+    <description>Getting tired of finding a solution to customize your title bar?
+No idea about how to set he background color of the titlebar?
+well you gotta try this UserControl!
+Access more in my github page:
+https://github.com/KailangHuo/CustomizedTitleBar</description>
+    <copyright>personal copyright</copyright>
+    <tags>CustomizedTitleBar, WPF,</tags>
+    <repository type="public" url="https://github.com/KailangHuo/CustomizedTitleBar" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="System.Drawing.Common" version="8.0.0-rc.2.23479.14" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\CustomizedTitleBar.runtimeconfig.json" target="lib\net6.0-windows7.0\CustomizedTitleBar.runtimeconfig.json" />
+    <file src="D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\bin\Debug\net6.0-windows\CustomizedTitleBar.dll" target="lib\net6.0-windows7.0\CustomizedTitleBar.dll" />
+    <file src="D:\System\Documents\GitHub\CustomizedTitleBar\CustomizedTitleBar\CustomizedTitleBar\docs\README.md" target="\README.md" />
+  </files>
+</package>
