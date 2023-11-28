@@ -2,8 +2,8 @@ using System.Windows;
 
 namespace CustomizedTitleBar; 
 
-public partial class MainWIndow : Window {
-    public MainWIndow() {
+public partial class MainWindow : Window {
+    public MainWindow() {
         InitializeComponent();
     }
 }

@@ -65,7 +65,7 @@
                         <!-- Minimize Button -->
                         <Button Name="MinimizeButton"
                                 Style="{DynamicResource GrayCaptionButtonStyleKey}"
-                                Width="40"
+                                Width="{Binding ButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 VerticalAlignment="Stretch"
                                 BorderThickness="0"
                                 Click="MinimizeButton_OnClick"
@@ -81,7 +81,8 @@
                         </Button>
                         
                         <!-- Maximize Button -->
-                        <Button Width="40" Name="MaximizeButton"
+                        <Button Name="MaximizeButton"
+                                Width="{Binding ButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
                                 Style="{DynamicResource GrayCaptionButtonStyleKey}"
                                 VerticalAlignment="Stretch"
                                 Visibility="{Binding IsNormalWindowState, Converter={StaticResource BoolToVisiConverter}}"
@@ -99,7 +100,8 @@
                         </Button>
                         
                         <!-- Normalize Button -->
-                        <Button Width="40" Name="NormalizeButton"
+                        <Button Name="NormalizeButton"
+                                Width="{Binding ButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 Style="{DynamicResource GrayCaptionButtonStyleKey}"
                                 VerticalAlignment="Stretch"
                                 Visibility="{Binding IsNormalWindowState, Converter={StaticResource ReverseBoolToVisiConverter}}"
@@ -117,7 +119,8 @@
                         </Button>
                         
                         <!-- Close Button -->
-                        <Button Width="40" Name="CloseButton"
+                        <Button Name="CloseButton"
+                                Width="{Binding ButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                                 Style="{DynamicResource RedCaptionButtonStyleKey}"
                                 VerticalAlignment="Stretch"
                                 BorderThickness="0"
